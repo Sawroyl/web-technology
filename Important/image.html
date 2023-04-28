@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        
+        }
+        .image h1{
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .column{
+            flex: 25%;
+        }
+
+        .column img{
+            padding: 4px;
+            width: 100px;
+            vertical-align: middle;
+        }
+
+        @media (max-width:800px){
+            .column{
+            flex: 50%;
+            }
+        }
+
+        @media (max-width:600px){
+            .column{
+            flex: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <h1>Responsive Image Gallery</h1>
+        <div class="row">
+            <div class="column">
+                <img src="./image/pexels-abhilash-b15858024.jpg" alt="">
+                <img src="./image/pexels-jaime-reimer-14380386.jpg" alt="">
+                <img src="./image/pexels-jessyka-malakrishnan-7565418.jpg" alt="">
+                <img src="./image/pexels-gül-işık-arques-15621850.jpg" alt="">
+            </div>
+        
+        
+            <div class="column">
+                <img src="./image/pexels-josh-hild-15706243.jpg" alt="">
+                <img src="./image/pexels-luca-dross-11906612.jpg" alt="">
+                <img src="./image/pexels-rickson-bejar-11963062.jpg" alt="">
+                <img src="./image/pexels-jessyka-marques-15621850.jpg" alt="">
+            </div>
+        
+            <div class="column">
+                <img src="./image/pexels-abhilash-balakrishnan-7565418.jpg" alt="">
+                <img src="./image/pexels-gül-işık-15858024.jpg" alt="">
+                <img src="./image/pexels-jaime-reimer-14380386.jpg" alt="">
+                <img src="./image/pexels-jessyka-marques-15621850.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

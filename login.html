@@ -4,15 +4,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VANS Login Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+
+        label, input {
+            display: block;
+            color: rgb(255, 255, 255);
+        }
+        input[type=submit],
+        input[type=text],
+        input[type=password]{
+            color: black;
+        }
+        h1{
+            margin-top: 2px;
+            color: rgb(206, 243, 243);
+        }
+        input{
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
-<body>
+<body background="./images.jpg">
+    <img src="./vans.svg" alt="" width="55px">
     <h1>VANS Login</h1>
-    <form action="login.php">
+    <form>
         <label for="username">Username:</label>
         <input type="text" name="username" id="username"></label>
         <label for="password">Password:</label>
-        <input type="text" name="password" id="password">
-        <input type="submit" value="submit">/
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Login">
+        <a href=""> <button>Sign-up</button> </a>
     </form>
 </body>
 </html>
